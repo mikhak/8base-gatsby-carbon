@@ -7,6 +7,9 @@
 - title: Gallery
   pages:
     - path: /gallery
+- title: Posts
+  pages:
+    - path: /posts
 - title: Contributions
   pages:
     - path: /contributions
