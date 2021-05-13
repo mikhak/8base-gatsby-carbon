@@ -9,7 +9,7 @@ import {
   Select,
   SelectItem,
   Button
-} from "carbon-components-react";
+} from "carbon-components-react"
 
 const MESSAGE_CREATE_MUTATION = gql`
   mutation MessageCreate($data: MessageCreateInput!) {
@@ -37,7 +37,7 @@ const MessageForm = ( { messageCreate } ) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    alert({name: name, body: body, option: option });
+    alert(JSON.stringify({"name": name, "body": body, "option": option }));
     // await messageCreate( { variables: { data : {name: name, body: body, option: option } } })
   };
 
@@ -88,6 +88,8 @@ const MessageForm = ( { messageCreate } ) => {
   );
 };
 
-export default graphql(MESSAGE_CREATE_MUTATION, {
-  name: 'messageCreate',
-  })(MessageForm)
+export default MessageForm
+
+// export default graphql(MESSAGE_CREATE_MUTATION, {
+//   name: 'messageCreate',
+//   })(MessageForm)

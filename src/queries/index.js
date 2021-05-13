@@ -16,6 +16,5 @@ const POSTS_QUERY = gql`
   }
 `;
 
-
 export { POSTS_QUERY }
 

@@ -4,7 +4,6 @@ module.exports = {
     description: "A Gatsby theme for the carbon design system",
     keywords: "gatsby,theme,carbon",
   },
-  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: "gatsby-plugin-manifest",
