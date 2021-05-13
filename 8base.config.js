@@ -5,7 +5,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 import fetch from 'isomorphic-fetch'
 
 
-const ENDPOINT = 'https://api.8base.com/cjyg9ed20000201mr6n1vcqcb';
+const ENDPOINT = 'https://api.8base.com/ck68cu2zp000208lbc58tdubx';
 
 const httpLink = createHttpLink({fetch, uri: ENDPOINT,});
 

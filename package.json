@@ -12,6 +12,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@apollo/client": "^3.3.17",
+    "@apollo/react-hooks": "^4.0.0",
     "apollo-boost": "^0.4.3",
     "apollo-link-context": "^1.0.18",
     "apollo-server": "^2.7.2",
@@ -24,9 +26,9 @@
     "graphql-tag": "^2.10.1",
     "isomorphic-fetch": "^3.0.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.0",
+    "react": "^17.0.2",
     "react-apollo": "^2.5.8",
-    "react-dom": "^17.0.1",
+    "react-dom": "^17.0.2",
     "react-helmet": "^5.2.1"
   }
 }

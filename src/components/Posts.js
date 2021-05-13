@@ -19,13 +19,16 @@ export default class Posts extends Component {
                   {posts.map((post, index) => {
                       return (
                         <div key={index} className="main">
-                              <div className="card-body">
-                                <h2>
-                                  <Link to={`/${post.id}`} className="links">{post.title}</Link>
-                                  <span className="created">Created At: {post.createdAt}</span>
-                                </h2>
-                                <p className="card-text">{post.body}</p>
-                              </div>
+                          <div className="card-body">
+                            <h2>
+                              {post.title}
+                              <span className="created">
+                                Created At: {post.createdAt}
+                              </span>
+                            </h2>
+                            <img src={post.image.downloadUrl + "?download=true"} />
+                            <p className="card-text">{post.text}</p>
+                          </div>
                         </div>
                       )
                   })}
